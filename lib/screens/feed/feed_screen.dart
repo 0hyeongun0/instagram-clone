@@ -5,17 +5,15 @@ class FeedScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Placeholder(
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text(
-            'Instagram',
-            style: TextStyle(fontSize: 20),
-          ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text(
+          'Instagram',
+          style: TextStyle(fontSize: 20),
         ),
-        body: const Text(
-          '피드',
-        ),
+      ),
+      body: const Text(
+        '피드',
       ),
     );
   }
