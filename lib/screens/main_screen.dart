@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/activity/activity_screen.dart';
+import 'package:flutter_application_1/screens/add/add_screen.dart';
 import 'package:flutter_application_1/screens/feed/feed_screen.dart';
 import 'package:flutter_application_1/screens/main_controller.dart';
+import 'package:flutter_application_1/screens/profile/profile_screen.dart';
+import 'package:flutter_application_1/screens/search/search_screen.dart';
 import 'package:get/get.dart';
 
 class MainScreen extends StatelessWidget {
@@ -11,26 +15,10 @@ class MainScreen extends StatelessWidget {
     final controller = Get.put(MainController());
     final screens = [
       FeedScreen(),
-      Scaffold(
-        body: Center(
-          child: Text('탐색'),
-        ),
-      ),
-      Scaffold(
-        body: Center(
-          child: Text('추가'),
-        ),
-      ),
-      Scaffold(
-        body: Center(
-          child: Text('알림'),
-        ),
-      ),
-      Scaffold(
-        body: Center(
-          child: Text('프로필'),
-        ),
-      ),
+      SearchScreen(),
+      AddScreen(),
+      ActivityScreen(),
+      ProfileScreen(),
     ];
 
     return Scaffold(
