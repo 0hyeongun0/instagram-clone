@@ -1,6 +1,6 @@
+import 'package:flutter_application_1/screens/main_screen.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
-import 'screens/feed/feed_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,6 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(home: const FeedScreen());
+    return GetMaterialApp(home: const MainScreen());
   }
 }
